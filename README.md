@@ -19,4 +19,4 @@ This project demonstrates an efficient method for detecting anomalies in a conti
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/kamal030803/Data-Anomaly-Detector.git
-   cd Efficient_Data_Stream_Anomaly_Detection
+   cd Data-Anomaly-Detector

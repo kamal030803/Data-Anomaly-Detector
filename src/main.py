@@ -7,13 +7,13 @@ if __name__ == "__main__":
     seasonal_period=50
     noise_level=0.2
     window_size=50
-    n_neighbors=5
-    anomaly_threshold=1.2
+    n_neighbors=3
+    threshold_percentile = 99
     
     #Generating some random real data stream
     data_stream = generate_data_stream(length=stream_length, seasonal_period=seasonal_period, noise_level=noise_level)
     
-    knn_detector = KNNAnomalyDetector(window_size=window_size, n_neighbors=n_neighbors, threshold=anomaly_threshold)
+    knn_detector = KNNAnomalyDetector(window_size=window_size, n_neighbors=n_neighbors, threshold_percentile=threshold_percentile)
 
     #anomalies for this PoC
     anomalies = {}

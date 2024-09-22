@@ -1,4 +1,5 @@
 from data_stream import generate_data_stream
+from knn_anomaly_detector import KNNAnomalyDetector
 
 if __name__ == "__main__":
     stream_length=1000
@@ -10,3 +11,5 @@ if __name__ == "__main__":
     
     #Generating some random real data stream
     data_stream = generate_data_stream(length=stream_length, seasonal_period=seasonal_period, noise_level=noise_level)
+    
+    knn_detector = KNNAnomalyDetector(window_size=window_size, n_neighbors=n_neighbors, threshold=anomaly_threshold)

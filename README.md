@@ -20,3 +20,13 @@ This project demonstrates an efficient method for detecting anomalies in a conti
    ```bash
    git clone https://github.com/kamal030803/Data-Anomaly-Detector.git
    cd Data-Anomaly-Detector
+
+2. **Set up the environment**:
+    Install the required dependencies using pip
+    ```bash
+    pip install -r requirements.txt
+
+3. **Run the project**
+    Navigate to the src folder and run the main.py script
+    ```bash
+    python src/main.py
